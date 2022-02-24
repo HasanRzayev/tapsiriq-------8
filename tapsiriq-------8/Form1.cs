@@ -36,12 +36,10 @@ namespace tapsiriq_______8
               Distinct().OrderBy(s => s).ToList();
             comboBox_country.DataSource = list;
             ///////////////////////////////////////
-            comboBox_position.Items.Add("4–4–2");
+
             comboBox_position.Items.Add("4–3–3");
             comboBox_position.Items.Add("4–4–2");
-            comboBox_position.Items.Add("4–4–1");
-            comboBox_position.Items.Add("4–3–2");
-            comboBox_position.Items.Add("5–3–2");
+
             comboBox_position.Items.Add("5–3–2");
             comboBox_position.Items.Add("3–4–3");
             //////////////////////////////////////////////
@@ -97,8 +95,7 @@ namespace tapsiriq_______8
 
 
 
-            for (int i = 0; i < 11; i++)
-            {
+          
                 Controls.Add(playerUC1);
                 Controls.Add(playerUC2);
                 Controls.Add(playerUC3);
@@ -110,7 +107,7 @@ namespace tapsiriq_______8
                 Controls.Add(playerUC9);
                 Controls.Add(playerUC10);
                 Controls.Add(playerUC11);
-            }
+  
         }
 
         private void comboBox_position_SelectedIndexChanged(object sender, EventArgs e)
@@ -185,7 +182,7 @@ namespace tapsiriq_______8
             foreach (var item in players)
             {
              
-                item.textBox1.Text = "hasan";
+              
                 item.textBox2.Text =r.Next(10,100).ToString();
                 item.textBox3.Text = "hasan";
 
